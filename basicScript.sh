@@ -1,7 +1,7 @@
 #######################################
 # 1. Convert VCF to PLINK format
 #######################################
-plink --vcf input.vcf --make-bed --out mydata
+plink --vcf input.vcf --recode --out mydata
 
 
 #######################################
