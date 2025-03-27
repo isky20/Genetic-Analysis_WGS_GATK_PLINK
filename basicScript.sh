@@ -19,8 +19,8 @@ plink --bfile qc_step2 --maf 0.01 --make-bed --out qc_step3
 
 # d. Remove SNPs not in Hardy-Weinberg Equilibrium
 plink --bfile qc_step3 --hwe 1e-6 --make-bed --out qc_final
-
-
+# or
+plink --bfile chr7_kin --geno 0.01 --mind 0.01 --hwe 0.001 --make-bed --out chr7_filtered
 #######################################
 # 3. Sample Checks
 #######################################
